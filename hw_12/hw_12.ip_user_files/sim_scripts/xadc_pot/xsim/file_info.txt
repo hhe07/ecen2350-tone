@@ -1,0 +1,2 @@
+xadc_pot.v,verilog,xil_defaultlib,../../../../hw_12.gen/sources_1/ip/xadc_pot/xadc_pot.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

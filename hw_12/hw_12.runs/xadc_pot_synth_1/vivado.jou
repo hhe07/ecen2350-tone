@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Apr 24 20:46:19 2023
+# Process ID: 60247
+# Current directory: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/xadc_pot_synth_1
+# Command line: vivado -log xadc_pot.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xadc_pot.tcl
+# Log file: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/xadc_pot_synth_1/xadc_pot.vds
+# Journal file: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/xadc_pot_synth_1/vivado.jou
+# Running On: TP-E485, OS: Linux, CPU Frequency: 1600.000 MHz, CPU Physical cores: 8, Host memory: 12150 MB
+#-----------------------------------------------------------
+source xadc_pot.tcl -notrace

@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 26 18:29:21 2023
+# Process ID: 363444
+# Current directory: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/synth_1
+# Command line: vivado -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/synth_1/main.vds
+# Journal file: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/synth_1/vivado.jou
+# Running On: TP-E485, OS: Linux, CPU Frequency: 1600.000 MHz, CPU Physical cores: 8, Host memory: 12150 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1289.246 ; gain = 0.023 ; free physical = 1017 ; free virtual = 3143
+Command: read_checkpoint -auto_incremental -incremental /home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/utils_1/imports/synth_1/pot_reader.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/utils_1/imports/synth_1/pot_reader.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 363555
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1927.141 ; gain = 370.801 ; free physical = 152 ; free virtual = 2352
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2922.809; parent = 1927.145; children = 995.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pot_reader' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:22]
+INFO: [Synth 8-6157] synthesizing module 'xadc_pot' [/home/hhe07/programming/ecen2350/hw_12/hw_12.runs/synth_1/.Xil/Vivado-363444-TP-E485/realtime/xadc_pot_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_pot' (0#1) [/home/hhe07/programming/ecen2350/hw_12/hw_12.runs/synth_1/.Xil/Vivado-363444-TP-E485/realtime/xadc_pot_stub.v:5]
+WARNING: [Synth 8-7071] port 'di_in' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7071] port 'busy_out' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7071] port 'channel_out' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7071] port 'eoc_out' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7071] port 'alarm_out' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7071] port 'vp_in' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7071] port 'vn_in' of module 'xadc_pot' is unconnected for instance 'x0' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+WARNING: [Synth 8-7023] instance 'x0' of module 'xadc_pot' has 15 connections declared, but only 7 given [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'pot_reader' (0#1) [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/pot_reader.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hexOut' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/hexOut.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hexOut' (0#1) [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/hexOut.v:23]
+INFO: [Synth 8-6157] synthesizing module 'audio_out' [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/audio_out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'audio_out' (0#1) [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/audio_out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [/home/hhe07/programming/ecen2350/hw_12/hw_12.srcs/sources_1/new/main.v:23]
+WARNING: [Synth 8-7129] Port btn[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module main is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1995.109 ; gain = 438.770 ; free physical = 315 ; free virtual = 2463
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2990.777; parent = 1995.113; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2012.922 ; gain = 456.582 ; free physical = 316 ; free virtual = 2464
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3008.590; parent = 2012.926; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2012.922 ; gain = 456.582 ; free physical = 315 ; free virtual = 2463
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3008.590; parent = 2012.926; children = 995.664
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2012.922 ; gain = 0.000 ; free physical = 306 ; free virtual = 2454
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hhe07/programming/ecen2350/hw_12/hw_12.gen/sources_1/ip/xadc_pot/xadc_pot/xadc_pot_in_context.xdc] for cell 'p/x0'
+Finished Parsing XDC File [/home/hhe07/programming/ecen2350/hw_12/hw_12.gen/sources_1/ip/xadc_pot/xadc_pot/xadc_pot_in_context.xdc] for cell 'p/x0'
+Parsing XDC File [/home/hhe07/Downloads/boolean.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/hhe07/Downloads/boolean.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/hhe07/Downloads/boolean.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/hhe07/Downloads/boolean.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/hhe07/Downloads/boolean.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/home/hhe07/Downloads/boolean.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/home/hhe07/Downloads/boolean.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/home/hhe07/Downloads/boolean.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/home/hhe07/Downloads/boolean.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/hhe07/Downloads/boolean.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/hhe07/Downloads/boolean.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/hhe07/Downloads/boolean.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/hhe07/Downloads/boolean.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/hhe07/Downloads/boolean.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/hhe07/Downloads/boolean.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/hhe07/Downloads/boolean.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/hhe07/Downloads/boolean.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/hhe07/Downloads/boolean.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/hhe07/Downloads/boolean.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/home/hhe07/Downloads/boolean.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/home/hhe07/Downloads/boolean.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/home/hhe07/Downloads/boolean.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [/home/hhe07/Downloads/boolean.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [/home/hhe07/Downloads/boolean.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [/home/hhe07/Downloads/boolean.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [/home/hhe07/Downloads/boolean.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/home/hhe07/Downloads/boolean.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [/home/hhe07/Downloads/boolean.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [/home/hhe07/Downloads/boolean.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [/home/hhe07/Downloads/boolean.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [/home/hhe07/Downloads/boolean.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [/home/hhe07/Downloads/boolean.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [/home/hhe07/Downloads/boolean.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'btn[1]'. [/home/hhe07/Downloads/boolean.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'RGB0[0]'. [/home/hhe07/Downloads/boolean.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'RGB0[1]'. [/home/hhe07/Downloads/boolean.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'RGB0[2]'. [/home/hhe07/Downloads/boolean.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'RGB1[0]'. [/home/hhe07/Downloads/boolean.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'RGB1[1]'. [/home/hhe07/Downloads/boolean.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'RGB1[2]'. [/home/hhe07/Downloads/boolean.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[0]'. [/home/hhe07/Downloads/boolean.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[1]'. [/home/hhe07/Downloads/boolean.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[2]'. [/home/hhe07/Downloads/boolean.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'D1_a[3]'. [/home/hhe07/Downloads/boolean.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[0]'. [/home/hhe07/Downloads/boolean.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[1]'. [/home/hhe07/Downloads/boolean.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[2]'. [/home/hhe07/Downloads/boolean.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[3]'. [/home/hhe07/Downloads/boolean.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[4]'. [/home/hhe07/Downloads/boolean.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[5]'. [/home/hhe07/Downloads/boolean.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[6]'. [/home/hhe07/Downloads/boolean.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[7]'. [/home/hhe07/Downloads/boolean.xdc:89]
+Finished Parsing XDC File [/home/hhe07/Downloads/boolean.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/hhe07/Downloads/boolean.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hhe07/Downloads/boolean.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2166.703 ; gain = 0.000 ; free physical = 217 ; free virtual = 2377
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2166.703 ; gain = 0.000 ; free physical = 217 ; free virtual = 2377
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 262 ; free virtual = 2422
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 262 ; free virtual = 2421
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for p/x0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 262 ; free virtual = 2422
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 245 ; free virtual = 2406
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    7 Bit        Muxes := 1     
+	   6 Input    7 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port btn[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module main is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 224 ; free virtual = 2391
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1432.890; parent = 1199.999; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 152 ; free virtual = 2291
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.390; parent = 1298.444; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 152 ; free virtual = 2291
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.487; parent = 1298.542; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 178 ; free virtual = 2303
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.343; parent = 1299.397; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin di_in[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \p/x0  has unconnected pin vn_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 162 ; free virtual = 2287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.476; parent = 1299.530; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 162 ; free virtual = 2287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.491; parent = 1299.546; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 162 ; free virtual = 2287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.507; parent = 1299.562; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 162 ; free virtual = 2287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.522; parent = 1299.577; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 162 ; free virtual = 2287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.522; parent = 1299.577; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 162 ; free virtual = 2287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.522; parent = 1299.577; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_pot      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |xadc_pot |     1|
+|2     |BUFG     |     1|
+|3     |CARRY4   |    28|
+|4     |LUT1     |    23|
+|5     |LUT2     |    23|
+|6     |LUT3     |     2|
+|7     |LUT4     |    28|
+|8     |LUT5     |     1|
+|9     |LUT6     |    12|
+|10    |FDRE     |    85|
+|11    |FDSE     |     1|
+|12    |IBUF     |     2|
+|13    |OBUF     |    14|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 162 ; free virtual = 2287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1531.554; parent = 1299.608; children = 232.891
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.355; parent = 2134.691; children = 995.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 18 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2166.703 ; gain = 456.582 ; free physical = 206 ; free virtual = 2331
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2166.703 ; gain = 610.363 ; free physical = 206 ; free virtual = 2331
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2166.703 ; gain = 0.000 ; free physical = 196 ; free virtual = 2321
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2166.703 ; gain = 0.000 ; free physical = 250 ; free virtual = 2379
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 33430df1
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 68 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2166.703 ; gain = 877.457 ; free physical = 457 ; free virtual = 2586
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/hhe07/programming/ecen2350/hw_12/hw_12.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 26 18:30:40 2023...

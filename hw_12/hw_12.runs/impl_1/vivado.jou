@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 26 18:30:54 2023
+# Process ID: 363778
+# Current directory: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/impl_1
+# Command line: vivado -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/impl_1/main.vdi
+# Journal file: /home/hhe07/programming/ecen2350/hw_12/hw_12.runs/impl_1/vivado.jou
+# Running On: TP-E485, OS: Linux, CPU Frequency: 2551.994 MHz, CPU Physical cores: 8, Host memory: 12150 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
